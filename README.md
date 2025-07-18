@@ -135,24 +135,6 @@ DEVICE_LOCATION=New York, NY
 - `GET /api/devices` - Get registered devices
 - `GET /api/health` - Health check
 
-## Security Features
-
-### Cryptographic Verification
-- ECDSA keypair generation for each device
-- Data integrity via SHA-256 hashing
-- Digital signatures for authentication
-
-### Rate Limiting
-- Configurable submission windows
-- Maximum submissions per time period
-- Proof-of-Physical-Work validation
-
-### Data Validation
-- Temperature range: -100°C to 70°C
-- Humidity range: 0% to 100%
-- Pressure range: 800 to 1200 hPa
-- Wind speed: 0 to 200 km/h
-- Timestamp validation (within 1 hour)
 
 ## Reward System
 
@@ -209,51 +191,3 @@ go test ./...
 cd frontend
 npm run dev
 ```
-
-## Deployment
-
-### Smart Contracts
-1. Configure Foundry with your private key
-2. Deploy to Arbitrum Sepolia testnet
-3. Verify contracts on Arbiscan
-4. Update backend/frontend with addresses
-
-### Backend Service
-1. Deploy to cloud service (AWS, GCP, etc.)
-2. Configure environment variables
-3. Set up monitoring and logging
-4. Configure HTTPS and CORS
-
-### Frontend
-1. Build production bundle: `npm run build`
-2. Deploy to static hosting (Vercel, Netlify, etc.)
-3. Configure environment variables
-4. Set up custom domain
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details
-
-## Support
-
-For questions and support:
-- Create an issue on GitHub
-- Check the documentation
-- Review the code examples
-
-## Roadmap
-
-- [ ] Real sensor integration APIs
-- [ ] Mobile app for data submission
-- [ ] Advanced analytics dashboard
-- [ ] Multi-chain deployment
-- [ ] Governance token functionality
-- [ ] Data marketplace features 
